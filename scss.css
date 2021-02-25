@@ -1,0 +1,211 @@
+.cover {
+    background: #26A69A;
+    z-index: 9999;
+    content: '';
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.cover.hidden {
+    animation: fadeout 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.contain {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 300px;
+}
+
+.dna {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spike {
+    height: 80%;
+    width: 3%;
+    position: relative;
+}
+
+.spike::before,
+.spike::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    margin: auto;
+    height: 10px;
+    width: 10px;
+}
+
+.spike::after {
+    bottom: 0;
+    background-color: #E0F2F1;
+    animation: aniaft 1.5s linear infinite;
+}
+
+.spike::before {
+    top: 0;
+    background-color: aqua;
+    animation: anibfr 1.5s linear infinite;
+}
+
+@keyframes anibfr {
+    0% {
+        top: 0%;
+        transform: translateX(-50%) translateY(0%) scale(0.5);
+        opacity: 0.75;
+    }
+    25% {
+        transform: translateX(-50%) translateY(0%) scale(0.5);
+        opacity: 0.5;
+        z-index: -1;
+    }
+    50% {
+        top: 100%;
+        transform: translateX(-50%) translateY(-100%) scale(0.5);
+        opacity: 0.25;
+    }
+    75% {
+        transform: translateX(-50%) translateY(0%) scale(1.5);
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        top: 0%;
+        transform: translateX(-50%) translateY(0%) scale(0.5);
+        opacity: 0.75;
+    }
+}
+
+@keyframes aniaft {
+    0% {
+        bottom: 0%;
+        transform: translateX(-50%) translateY(0%) scale(0.5);
+        opacity: 0.25;
+    }
+    25% {
+        transform: translateX(-50%) translateY(-100%) scale(1.5);
+        opacity: 1;
+        z-index: -1;
+    }
+    50% {
+        bottom: 100%;
+        transform: translateX(-50%) translateY(100%) scale(0.5);
+        opacity: 0.75;
+    }
+    75% {
+        transform: translateX(-50%) translateY(-100%) scale(1.5);
+        opacity: 0.50;
+        z-index: -1;
+    }
+    100% {
+        bottom: 0%;
+        transform: translateX(-50%) translateY(0%) scale(0.5);
+        opacity: 0.25;
+    }
+}
+
+.spike1::before,
+.spike1::after {
+    animation-delay: 0.15s;
+}
+
+.spike2::before,
+.spike2::after {
+    animation-delay: 0.3s;
+}
+
+.spike3::before,
+.spike3::after {
+    animation-delay: 0.45s;
+}
+
+.spike4::before,
+.spike4::after {
+    animation-delay: 0.6s;
+}
+
+.spike5::before,
+.spike5::after {
+    animation-delay: 0.75s;
+}
+
+.spike6::before,
+.spike6::after {
+    animation-delay: 0.9s;
+}
+
+.spike7::before,
+.spike7::after {
+    animation-delay: 1.05s;
+}
+
+.spike8::before,
+.spike8::after {
+    animation-delay: 1.2s;
+}
+
+.spike9::before,
+.spike9::after {
+    animation-delay: 1.35s;
+}
+
+.spike10::before,
+.spike10::after {
+    animation-delay: 1.5s;
+}
+
+.spike11::before,
+.spike11::after {
+    animation-delay: 1.65s;
+}
+
+.spike12::before,
+.spike12::after {
+    animation-delay: 1.8s;
+}
+
+.spike13::before,
+.spike13::after {
+    animation-delay: 1.95s;
+}
+
+.spike14::before,
+.spike14::after {
+    animation-delay: 2.1s;
+}
+
+.spike15::before,
+.spike15::after {
+    animation-delay: 2.25s;
+}
+
+
+/*# sourceMappingURL=scss.css.map */

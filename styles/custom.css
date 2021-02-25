@@ -1,0 +1,261 @@
+    .menu {
+        width: 280px;
+        height: 100vh;
+        position: fixed;
+    }
+    
+    .collection-item:hover {
+        text-decoration: none;
+    }
+    
+    .slick-arrow {
+        position: absolute;
+        background: #0099999f;
+        border-radius: 10px;
+    }
+    
+    .break {
+        font-size: 2rem;
+        font-weight: bolder;
+        transform: rotateZ(90deg);
+        padding-top: 2%!important;
+    }
+    
+    .btnGo {
+        position: relative;
+        top: 20px
+    }
+    
+    .main_body {
+        padding: 0px 3%;
+    }
+    
+    body {
+        background: #EDEDEE;
+    }
+    
+    .table_div {
+        padding-top: 10vh;
+    }
+    
+    .event::after {
+        content: 'Time';
+        position: relative;
+        top: -12px;
+        align-items: center;
+    }
+    
+    .event::before {
+        content: 'Day';
+        position: relative;
+        top: 12px;
+        align-items: center;
+    }
+    
+    .event {
+        border: 1px solid #DEE2E6;
+    }
+    
+    .time_table div {
+        display: inline;
+        width: 20%;
+    }
+    
+    .input-field input:focus+label,
+    .input-field input:valid+label {
+        top: 2px !important;
+    }
+    
+    .image_card {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 9px;
+        transition: 0.5s;
+    }
+    
+    .image_card:hover {
+        transform: scale(1.1);
+    }
+    
+    .over-lay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #0099999f;
+        content: '';
+        top: 0;
+        padding: 15vh 5vw;
+        z-index: 10;
+        display: none;
+    }
+    
+    .timeTableEvents {
+        text-transform: uppercase;
+        font-weight: 900;
+        padding: -20px !important;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        max-width: 30px;
+    }
+    
+    .timeTableEvents span {
+        transform: rotate(90deg);
+        letter-spacing: 2vw;
+        font-size: 2rem;
+        padding-bottom: 10vh !important;
+    }
+    
+    .nameRow {
+        max-height: 5px !important;
+    }
+    
+    .arr_row {
+        transform: rotate(-90deg);
+    }
+    
+    .fa-angle-left {
+        transition: 0.5s;
+    }
+    
+    .attendence {
+        width: 90%;
+        height: 30vh;
+    }
+    
+    .jumbotron {
+        background-image: url(../webImage/Capture.PNG);
+        text-shadow: 1px 2px 1px;
+    }
+    
+    #calendar {
+        padding-top: 10px;
+        height: 800px;
+        margin: 0 auto;
+        position: sticky;
+        top: 0px;
+    }
+    
+    .emojionearea .emojionearea-editor {
+        min-height: 32px;
+    }
+    
+    .typ {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-top: 7px !important;
+    }
+    
+    .typ1 {
+        top: 0;
+        background-color: aqua;
+        animation: typ1 1s linear infinite;
+    }
+    
+    @keyframes typ1 {
+        0% {
+            top: 0%;
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+        25% {
+            transform: scale(0.5);
+            opacity: 0.5;
+            z-index: -1;
+        }
+        50% {
+            top: 100%;
+            transform: scale(0.5);
+            opacity: 0.25;
+        }
+        75% {
+            transform: scale(1.5);
+            opacity: 1;
+            z-index: 1;
+        }
+        100% {
+            top: 0%;
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+    }
+    
+    .typ2 {
+        top: 0;
+        background-color: aqua;
+        animation: typ2 0.8s linear infinite;
+    }
+    
+    @keyframes typ2 {
+        0% {
+            top: 0%;
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+        25% {
+            transform: scale(0.5);
+            opacity: 0.5;
+            z-index: -1;
+        }
+        50% {
+            top: 100%;
+            transform: scale(0.5);
+            opacity: 0.25;
+        }
+        75% {
+            transform: scale(1.5);
+            opacity: 1;
+            z-index: 1;
+        }
+        100% {
+            top: 0%;
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+    }
+    
+    .typ3 {
+        top: 0;
+        background-color: aqua;
+        animation: typ3 0.7s linear infinite;
+    }
+    
+    @keyframes typ3 {
+        0% {
+            top: 0%;
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+        25% {
+            transform: scale(0.5);
+            opacity: 0.5;
+            z-index: -1;
+        }
+        50% {
+            top: 100%;
+            transform: scale(0.5);
+            opacity: 0.25;
+        }
+        75% {
+            transform: scale(1.5);
+            opacity: 1;
+            z-index: 1;
+        }
+        100% {
+            top: 0%;
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .btnGo {
+            top: -10px;
+            left: 15px;
+        }
+    }
